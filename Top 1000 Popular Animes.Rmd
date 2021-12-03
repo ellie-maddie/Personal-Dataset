@@ -1,0 +1,27 @@
+---
+title: "Elizabeth Madison - Top 1000 Popular Animes"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+
+
+```{r}
+library(tidyverse)
+library(dplyr)
+library(ISLR)
+library(MASS)
+library(ggplot2)
+library(readr)
+data = read_csv("anime top 1000 popular.csv")
+summary(data)
+
+
+ggplot(data, mapping = aes(x=Score , group=1)) +
+geom_histogram(fill="light blue" , lwd=1.5) + xlab("Score") + ylab("Count") + ggtitle("Score Distribution of the Top 1000 popular animes") 
+
+ggplot(data, mapping = aes(x=Score , group=1)) +
+  geom_boxplot(fill="orange" , lwd=1.5) + xlab("Score") + ylab("Count") + ggtitle("Score Distribution of the Top 1000 popular animes") 
+```
+
+
