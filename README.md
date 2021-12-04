@@ -14,10 +14,15 @@ Analysis:
 To analyze this data, I began with a summary of the data and found Tukey's 5 number summary of the anime's scores which are as follows:
 
  Min.    : 3.410
+ 
  1st Qu. : 7.3
+ 
  Median  : 7.6
+ 
  Mean    : 7.669
+ 
  3rd Qu. : 8.140
+ 
  Max.    : 9.190
 
  Next, I created a boxplot of the score data and a histogram.
